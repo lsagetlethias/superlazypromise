@@ -1,0 +1,41 @@
+{
+  "name": "superlazypromise",
+  "version": "0.0.1",
+  "description": "Promises made lazy.",
+  "main": "bin/LazyPromise.node.js",
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bios21/superlazypromise.git"
+  },
+  "keywords": [
+    "super",
+    "lazy",
+    "promise",
+    "a+",
+    "then",
+    "thenable"
+  ],
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.10.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-es2015-node4": "^2.1.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "mocha": "^2.5.3",
+    "should": "^9.0.2"
+  },
+  "author": "Lilian Saget-Lethias <lilian.sagetlethias@gmail.com> (http://github.com/bios21)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bios21/superlazypromise/issues"
+  },
+  "homepage": "https://github.com/bios21/superlazypromise#readme"
+}

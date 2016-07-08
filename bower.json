@@ -1,0 +1,25 @@
+{
+  "name": "superlazypromise",
+  "description": "Promises made lazy.",
+  "main": "bin/LazyPromise.browser.js",
+  "authors": [
+    "Lilian Saget-Lethias <lilian.sagetlethias@gmail.com> (http://github.com/bios21)"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "super",
+    "lazy",
+    "promise",
+    "a+",
+    "then",
+    "thenable"
+  ],
+  "homepage": "https://github.com/bios21/superlazypromise#readme",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
