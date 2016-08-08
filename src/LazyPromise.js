@@ -2,7 +2,7 @@
 
 var _module = null,
     _exports = null;
-if (module && module.exports) {
+if (typeof(module) !== 'undefined' && module.exports) {
     _exports = module.exports;
     _module = {};
 } else {
@@ -22,7 +22,7 @@ if (module && module.exports) {
      * thrown from your task, or to manually call `rawAsap.requestFlush` if an exception is thrown.
      *
      * @param {{call}} task A callable object, typically a function that takes no arguments.
-     * @alias jaggerbomb.utils.LazyPromise.rawAsap
+     * @alias LazyPromise.rawAsap
      */
     var rawAsap = (() => {
         /**
@@ -266,7 +266,7 @@ if (module && module.exports) {
      * down the processing of other events, but will be rather postponed to a lower priority event.
      *
      * @param {{call}} task A callable object, typically a function that takes no arguments.
-     * @alias jaggerbomb.utils.LazyPromise.asap
+     * @alias LazyPromise.asap
      */
     var asap = (() => {
         /**
@@ -431,9 +431,7 @@ if (module && module.exports) {
      * Like the classic `LazyPromise`, the execution will overload the setTimeout/setInterval/setImmediate thread with
      * a pool of task (for each promise) handled by the `LazyPromise.asap` (and `rawAsap`) methods. And it's super sexy.
      *
-     * @extends jaggerbomb.utils.LazyPromise
-     *
-     * @memberOf jaggerbomb.utils
+     * @extends LazyPromise
      */
     class SuperLazyPromise extends LazyPromise {
         /**
@@ -502,4 +500,4 @@ if (module && module.exports) {
 
     exports.LazyPromise = LazyPromise;
     exports.SuperLazyPromise = SuperLazyPromise;
-})(_module, _exports, (global || window));
+})(_module, _exports, typeof(global) !== 'undefined' ? global : window);
